@@ -1,6 +1,7 @@
 
 import NavBar from "./NavBar"; // Import your existing NavBar component
 import cityImage from "../assets/pedro-lastra-Nyvq2juw4_o-unsplash.jpg"
+import MaxWidth from "./MaxWidth";
 const Billboard = () => {
   return (
     <div
@@ -15,10 +16,12 @@ const Billboard = () => {
         <NavBar />
       </div>
 
+
       {/* Billboard Text Content */}
-      <div className="absolute inset-y-0 left-0 flex items-center justify-start px-8 sm:px-16 z-0">
+      <MaxWidth>
+      <div className="absolute inset-y-0 left-[10%] sm:left-[15%] flex items-center justify-start px-8 sm:px-16 z-0">
         <div className="text-white max-w-lg">
-          <h1 className="text-4xl text-center sm:text-5xl font-bold mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">
             Sheger city
           </h1>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
@@ -27,6 +30,10 @@ const Billboard = () => {
  
         </div>
       </div>
+
+     
+      </MaxWidth>
+
     </div>
   );
 };
