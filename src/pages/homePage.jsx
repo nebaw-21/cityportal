@@ -8,7 +8,6 @@ function LandingPage() {
     <>
     
 <Billboard />
-
   <MaxWidth>
     <div className=" grid grid-cols-3 gap-x-5 mt-10 px-5 mt-[-40px] max-w-[1200px] mx-auto ">
       <MessageCard 

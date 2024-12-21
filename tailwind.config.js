@@ -4,7 +4,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "phudu": ['Phudu', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
