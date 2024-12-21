@@ -1,8 +1,14 @@
+import DashBox from "./decorations/DashBox";
+
 export default function HorizontalCard() {
     return (
-        <div  className="p-4 md:p-8  border border-gray-600 mx-4 mt-8 rounded-md">
-            <h1 className="text-3xl">Lets Hear from </h1>
-            <h2 className="text-3xl">The Mayor</h2>
+        <div className="p-4 md:p-8  border border-gray-600 mx-4 mt-8 rounded-md inline-block">
+            <h1 className="text-2xl">Let&apos;s Hear from </h1>
+            <div className=" relative pl-10  inline-block pb-[35px]">
+              <h2 className="text-3xl inline-block">the <span className="text-5xl">Mayor</span></h2>
+              <DashBox customStyles={" right-0 bottom-0 "} />
+            </div>
+           
 
       <div className="w-full  flex flex-row  rounded-lg overflow-hidden">
         <div className="w-2/5 shrink-0">
